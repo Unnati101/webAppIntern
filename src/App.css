@@ -1,0 +1,30 @@
+*{
+  background-color: black;
+}
+.logo{
+  width: 200px;
+  margin-left: 65px;
+  margin-top: 30px;
+ 
+}
+.textF{
+  border-radius: 6px;
+  margin-bottom: 16px;
+  margin-left: 85px;
+  background-color: rgba(61, 54, 54, 0.555);
+}
+
+.button{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  color: white;
+  margin-left: 85px ;
+  width: 170px;
+  background-color: rgb(10, 15, 42)
+}
+.forP{
+  margin-top: 50px;
+  margin-left: 115px;
+  color: purple;
+}
