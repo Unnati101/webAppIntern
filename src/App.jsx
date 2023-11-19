@@ -1,8 +1,9 @@
 import { useState } from 'react'
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
 import logo from './assets/bird_2.jpg';
 import { Link } from "react-router-dom";
-// import {dashboard} from "./Dashboard.jsx";
+import Dashboard from "./Dashboard.jsx";
 function App() {
  
 
@@ -21,7 +22,13 @@ function App() {
 <br></br>
    <a className="forP" href="">Forgot Password?</a>
    <br></br>
- <Link to="src\Dashboard.jsx">Dashboard</Link>
+<BrowserRouter>
+<Routes>
+  <Route  element={<Dashboard/>}/>
+
+  </Routes>
+ 
+    </BrowserRouter>
 
 </form>
     </>
