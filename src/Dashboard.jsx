@@ -6,55 +6,36 @@ import LinearProgress from '@mui/material/LinearProgress';
 
 import './dash.css';
 
-function dashboard(){
-    return(
-        <>
-        <img className='logo'src={logo}/>
-        <div className="empProgress">
-            <p className="dash">Employee Productivity Dashboard
-            <br></br>
-            Productivity on Monday
-            <Box><LinearProgress variant="determinate" value={50} />
-            <Typography variant="caption" component="div" color="text.secondary">
-          {"25%"}
-        </Typography>
-        </Box>
-        <br></br>
-        Productivity on Tuesday
-            <Box><LinearProgress variant="determinate" value={60} />
-            <Typography variant="caption" component="div" color="text.secondary">
-          {"25%"}
-        </Typography>
-        </Box>
-        <br></br>
-        Productivity on Wednesday
-            <Box><LinearProgress variant="determinate" value={40} />
-            <Typography variant="caption" component="div" color="text.secondary">
-          {"25%"}
-        </Typography>
-        </Box>
-      <br></br>
-        Productivity on Thursday
-            <Box><LinearProgress variant="determinate" value={80} />
-            <Typography variant="caption" component="div" color="text.secondary">
-          {"25%"}
-        </Typography>
-        </Box>
-      <br></br>
-        Productivity on Friday
-            <Box><LinearProgress variant="determinate" value={90} />
-            <Typography variant="caption" component="div" color="text.secondary">
-          {"25%"}
-        </Typography>
-        </Box>
-       <br></br>
-            </p>
-            
+function dashboard() {
+  return (
+    <>
+      <img className='logo' src={logo} />
+      <div className="empProgress">
 
-            
-            
-        </div>
+        <br></br>
+        Productivity on Monday
+        <Box sx={{ display: 'flex', alignItems: 'center', backgroundColor: 'rgb(33, 33, 33)' }}>
+          <Box sx={{ width: '100%', mr: 1 }}>
+            <LinearProgress variant="determinate" value={50} />
+          </Box>
+          <Box sx={{ minWidth: 3, backgroundColor: 'rgb(33, 33, 33)' }}>
+            <Typography variant="body2" color="white" bgcolor='rgb(33,33,33)'>{`50%`}</Typography>
+          </Box>
+        </Box>
+
+
+        Productivity on Tuesday
+        <Box sx={{ display: 'flex', alignItems: 'center', backgroundColor: 'rgb(33, 33, 33)' }}>
+          <Box sx={{ width: '100%', mr: 1 }}>
+            <LinearProgress variant="determinate" value={60} />
+          </Box>
+          <Box sx={{ minWidth: 3, backgroundColor: 'rgb(33, 33, 33)' }}>
+            <Typography variant="body2" color="white" bgcolor='rgb(33,33,33)'>{`60%`}</Typography>
+          </Box>
+        </Box>
+
+      </div >
     </>
-    );
+  );
 }
 export default dashboard
